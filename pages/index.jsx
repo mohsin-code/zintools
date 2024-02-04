@@ -1,6 +1,6 @@
 import Head from "next/head";
 import Navbar from "@/components/Navbar";
-import Menu from "@/components/Menu";
+import GridItem from "@/components/GridItem";
 // import styles from "@/styles/Home.module.css";
 
 export default function Home() {
@@ -13,7 +13,7 @@ export default function Home() {
       </Head>
       <main>
         <Navbar />
-        <div>hi</div>
+        <GridItem />
       </main>
     </>
   );
