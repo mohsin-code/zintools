@@ -1,0 +1,21 @@
+.menu {
+  width: 100%;
+  display: flex;
+  padding: 0 1.5rem;
+  padding-top: 0.75rem;
+  overflow: visible;
+}
+
+.menu_item {
+  height: 2.5rem;
+  padding: 0 1rem;
+  font-size: 0.85rem;
+  cursor: pointer;
+  font-weight: 500;
+  color: #484848;
+}
+
+.menu_item:hover {
+  border-bottom: #523ee8 2px solid;
+  box-sizing: border-box;
+}

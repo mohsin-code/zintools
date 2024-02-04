@@ -1,5 +1,6 @@
 import Head from "next/head";
 import Navbar from "@/components/Navbar";
+import Menu from "@/components/Menu";
 // import styles from "@/styles/Home.module.css";
 
 export default function Home() {
@@ -11,7 +12,8 @@ export default function Home() {
         <link rel="icon" href="/favicon.ico" />
       </Head>
       <main>
-        <Navbar/>
+        <Navbar />
+        <div>hi</div>
       </main>
     </>
   );
