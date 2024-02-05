@@ -9,8 +9,6 @@ import { useState } from "react";
 export default function Home() {
   const [bookmarks, setBookmarks] = useState([]);
 
-  console.log(bookmarks)
-
   return (
     <>
       <Head>
@@ -20,9 +18,9 @@ export default function Home() {
       </Head>
       <main>
         <Navbar />
-        <Slider data={bookmarks} bookmarks={bookmarks} setBookmarks={setBookmarks} title="Bookmarks" />
-        <Slider data={data} bookmarks={bookmarks} setBookmarks={setBookmarks} title="Convert to PDF" />
-        <Slider data={data} bookmarks={bookmarks} setBookmarks={setBookmarks} title="Convert from PDF" />
+        {bookmarks.length > 0 && <Slider data={bookmarks} bookmarks={bookmarks} setBookmarks={setBookmarks} title="Bookmarks" />}
+        <Slider data={data.slice(3, 10)} bookmarks={bookmarks} setBookmarks={setBookmarks} title="Convert to PDF" />
+        <Slider data={data.slice(10)} bookmarks={bookmarks} setBookmarks={setBookmarks} title="Convert from PDF" />
         <Footer />
       </main>
     </>
