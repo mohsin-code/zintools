@@ -4,10 +4,10 @@
 }
 
 .slider {
-  display: flex;
-  transition: transform 0.3s ease;
+  display: grid;
+  grid-column-gap: 2rem;
+  grid-template-columns: repeat(5, 1fr);
   margin: 1.5rem 2rem;
-  gap: 2rem;
   position: relative;
 }
 
@@ -24,6 +24,19 @@
   cursor: pointer;
 }
 
+.heading {
+  display: flex;
+  justify-content: space-between;
+  padding: 0.5rem 2rem;
+}
+
+.heading > h2 {
+  font-weight: 700;
+  font-size: 30px;
+  line-height: 36px;
+  color: #121212;
+}
+
 .slider > button > img {
   height: 1.5rem;
 }
@@ -34,4 +47,9 @@
 
 .prev {
   left: -1rem;
+}
+
+.slider > button:disabled {
+  background-color: #ddd;
+  border-color: #ddd;
 }

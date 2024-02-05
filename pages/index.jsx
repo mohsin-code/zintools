@@ -1,8 +1,8 @@
 import Head from "next/head";
 import Navbar from "@/components/Navbar";
-import Grid from "@/components/Grid";
 import Slider from "@/components/Slider";
 import Footer from "@/components/Footer";
+import data from "@/services/data";
 // import styles from "@/styles/Home.module.css";
 
 export default function Home() {
@@ -15,10 +15,9 @@ export default function Home() {
       </Head>
       <main>
         <Navbar />
-        <Grid />
-        <Slider />
-        <Grid />
-        <Grid />
+        <Slider data={data} title="Bookmarks" />
+        <Slider data={data} title="Convert to PDF" />
+        <Slider data={data} title="Convert from PDF" />
         <Footer />
       </main>
     </>
