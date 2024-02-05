@@ -14,7 +14,7 @@ export default function Item({ data, condition, setBookmarks }) {
     <div className={styles.item_container}>
       <div>
         <Image width="64" height="64" src={data.image} alt={data.imageAlt} />
-        <Image width="21" height="21" src={`${condition ? './bookmarked.svg' : './bookmark.svg'}`} alt={data.imageAlt} onClick={handleBookmark} />
+        <Image className={styles.bookmark} width="21" height="21" src={`${condition ? './bookmarked.svg' : './bookmark.svg'}`} alt={data.imageAlt} onClick={handleBookmark} />
       </div>
       <h3>{data.title}</h3>
       <p>{data.desc}</p>

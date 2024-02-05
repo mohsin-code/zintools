@@ -4,7 +4,6 @@ import Slider from "@/components/Slider";
 import Footer from "@/components/Footer";
 import data from "@/services/data";
 import { useState } from "react";
-// import styles from "@/styles/Home.module.css";
 
 export default function Home() {
   const [bookmarks, setBookmarks] = useState([]);

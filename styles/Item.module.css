@@ -29,3 +29,12 @@
   -webkit-box-orient: vertical;
   max-height: calc(28px + 0.6rem);
 }
+
+.bookmark {
+  opacity: 0;
+  transition: opacity 0.4s ease-in-out;
+}
+
+.item_container:hover .bookmark {
+  opacity: 1;
+}
