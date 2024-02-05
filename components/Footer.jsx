@@ -1,4 +1,5 @@
 import styles from '@/styles/Footer.module.css';
+import Image from 'next/image';
 
 export default function Footer() {
   return (
@@ -55,7 +56,7 @@ export default function Footer() {
       </div>
       <div className={styles.policy}>
         <div className="logo">
-          <img src="/icon.svg" alt="Logo" />
+          <Image src="/icon.svg" alt="Logo" />
           <h2>ZinTools</h2>
         </div>
         <ul>
@@ -66,7 +67,7 @@ export default function Footer() {
           <li>Contact</li>
           <li>EULA</li>
           <li className={styles.dark}>
-            <img src="./dark.svg" width="24px"/>
+            <Image src="./dark.svg" alt="darkmode" width="24px"/>
           </li>
         </ul>
       </div>

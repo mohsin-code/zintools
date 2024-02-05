@@ -2,6 +2,7 @@ import styles from '@/styles/Slider.module.css';
 import { heading } from '@/styles/GridTitle.module.css';
 import GridItem from './GridItem';
 import { useState } from 'react';
+import Image from 'next/image';
 
 export default function Slider() {
   const [startIndex, setStartIndex] = useState(0);
@@ -23,10 +24,10 @@ export default function Slider() {
       </div>
       <div className={styles.slider}>
         {items.slice(startIndex, startIndex + 4).map((item, index) => (
-          <GridItem />
+          <GridItem key={index} />
         ))}
-        <button className={styles.prev} onClick={handlePrev}><img src="./left.svg" /></button>
-        <button className={styles.next} onClick={handleNext}><img src="./right.svg" /></button>
+        <button className={styles.prev} onClick={handlePrev}><Image src="./left.svg" alt='left' /></button>
+        <button className={styles.next} onClick={handleNext}><Image src="./right.svg" alt='right' /></button>
       </div>
     </div>
   )

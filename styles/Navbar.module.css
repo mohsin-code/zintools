@@ -13,22 +13,11 @@
   height: auto;
 }
 
-.logo {
-  display: flex;
-  align-items: center;
-  gap: 0.5rem;
-  font-size: 15px;
-}
-
-.logo img {
-  max-width: 2.5rem;
-}
-
 .search_container {
   border-radius: 3rem;
   display: flex;
   position: relative;
-  width: 40vw;
+  width: 45vw;
 }
 
 .search {
@@ -50,6 +39,7 @@
   right: 24px;
   top: 50%;
   transform: translateY(-50%);
+  cursor: pointer;
 }
 
 .auth {
@@ -60,9 +50,11 @@
 
 .auth > b {
   font-size: 0.9rem;
+  cursor: pointer;
 }
 
 .auth > button {
+  cursor: pointer;
   font-weight: bolder;
   border: none;
   border-radius: 3rem;

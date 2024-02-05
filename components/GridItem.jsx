@@ -1,4 +1,5 @@
 import styles from '@/styles/GridItem.module.css';
+import Image from 'next/image';
 
 export default function GridItem() {
   const data = {
@@ -9,8 +10,8 @@ export default function GridItem() {
   };
 
   return (
-    <div className={`${styles.item_container}`}>
-      <img src={data.image} alt={data.imageAlt} />
+    <div className={styles.item_container}>
+      <Image src={data.image} alt={data.imageAlt} />
       <h3>{data.title}</h3>
       <p>{data.desc}</p>
     </div>
