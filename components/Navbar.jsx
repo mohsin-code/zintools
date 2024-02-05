@@ -7,7 +7,7 @@ export default function Navbar() {
     <nav className={styles.nav}>
       <div className={styles.topbar}>
         <div className="logo">
-          <Image src="/icon.svg" alt="Logo" />
+          <img src="/icon.svg" alt="Logo" />
           <h2>ZinTools</h2>
         </div>
         <div className={styles.search_container}>

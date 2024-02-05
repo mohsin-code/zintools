@@ -26,8 +26,8 @@ export default function Slider() {
         {items.slice(startIndex, startIndex + 4).map((item, index) => (
           <GridItem key={index} />
         ))}
-        <button className={styles.prev} onClick={handlePrev}><Image src="./left.svg" alt='left' /></button>
-        <button className={styles.next} onClick={handleNext}><Image src="./right.svg" alt='right' /></button>
+        <button className={styles.prev} onClick={handlePrev}><Image layout="fill" src="./left.svg" alt='left' /></button>
+        <button className={styles.next} onClick={handleNext}><Image layout="fill" src="./right.svg" alt='right' /></button>
       </div>
     </div>
   )

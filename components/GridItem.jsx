@@ -11,7 +11,7 @@ export default function GridItem() {
 
   return (
     <div className={styles.item_container}>
-      <Image src={data.image} alt={data.imageAlt} />
+      <img src={data.image} alt={data.imageAlt} />
       <h3>{data.title}</h3>
       <p>{data.desc}</p>
     </div>

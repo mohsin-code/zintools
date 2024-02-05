@@ -56,7 +56,7 @@ export default function Footer() {
       </div>
       <div className={styles.policy}>
         <div className="logo">
-          <Image src="/icon.svg" alt="Logo" />
+          <img src="/icon.svg" alt="Logo" />
           <h2>ZinTools</h2>
         </div>
         <ul>
@@ -67,7 +67,7 @@ export default function Footer() {
           <li>Contact</li>
           <li>EULA</li>
           <li className={styles.dark}>
-            <Image src="./dark.svg" alt="darkmode" width="24px"/>
+            <Image src="./dark.svg" alt="darkmode" width="24" height="24" />
           </li>
         </ul>
       </div>
