@@ -1,6 +1,6 @@
 import Head from "next/head";
 import Navbar from "@/components/Navbar";
-import GridItem from "@/components/GridItem";
+import Grid from "@/components/Grid";
 // import styles from "@/styles/Home.module.css";
 
 export default function Home() {
@@ -9,11 +9,11 @@ export default function Home() {
       <Head>
         <title>Zintools</title>
         <meta name="viewport" content="width=device-width, initial-scale=1" />
-        <link rel="icon" href="/favicon.ico" />
+        <link rel="icon" href="/icon.svg" />
       </Head>
       <main>
         <Navbar />
-        <GridItem />
+        <Grid />
       </main>
     </>
   );
