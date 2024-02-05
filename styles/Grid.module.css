@@ -2,19 +2,6 @@
   margin: 2rem;
 }
 
-.heading{
-  display: flex;
-  justify-content: space-between;
-  padding: 0 2rem;
-}
-
-.heading > h2 {
-  font-weight: 700;
-  font-size: 30px;
-  line-height: 36px;
-  color: #121212;
-}
-
 .grid {
   padding: 1.5rem 2rem 0 2rem;
   display: grid;
