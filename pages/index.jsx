@@ -3,9 +3,14 @@ import Navbar from "@/components/Navbar";
 import Slider from "@/components/Slider";
 import Footer from "@/components/Footer";
 import data from "@/services/data";
+import { useState } from "react";
 // import styles from "@/styles/Home.module.css";
 
 export default function Home() {
+  const [bookmarks, setBookmarks] = useState([]);
+
+  console.log(bookmarks)
+
   return (
     <>
       <Head>
@@ -15,9 +20,9 @@ export default function Home() {
       </Head>
       <main>
         <Navbar />
-        <Slider data={data} title="Bookmarks" />
-        <Slider data={data} title="Convert to PDF" />
-        <Slider data={data} title="Convert from PDF" />
+        <Slider data={bookmarks} bookmarks={bookmarks} setBookmarks={setBookmarks} title="Bookmarks" />
+        <Slider data={data} bookmarks={bookmarks} setBookmarks={setBookmarks} title="Convert to PDF" />
+        <Slider data={data} bookmarks={bookmarks} setBookmarks={setBookmarks} title="Convert from PDF" />
         <Footer />
       </main>
     </>

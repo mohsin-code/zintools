@@ -11,19 +11,6 @@
   position: relative;
 }
 
-.next,
-.prev {
-  border: 1px solid #999;
-  border-radius: 50%;
-  position: absolute;
-  display: grid;
-  place-items: center;
-  top: 50%;
-  transform: translateY(-50%);
-  background-color: white;
-  cursor: pointer;
-}
-
 .heading {
   display: flex;
   justify-content: space-between;
@@ -47,6 +34,24 @@
 
 .prev {
   left: -1rem;
+}
+
+.slider > button {
+  opacity: 0;
+  border: 1px solid #999;
+  border-radius: 50%;
+  position: absolute;
+  display: grid;
+  place-items: center;
+  transition: opacity 0.4s ease-in-out, visibility 0.4s ease-in-out;
+  top: 50%;
+  transform: translateY(-50%);
+  background-color: white;
+  cursor: pointer;
+}
+
+.slider:hover > button {
+  opacity: 1;
 }
 
 .slider > button:disabled {

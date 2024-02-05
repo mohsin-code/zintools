@@ -15,6 +15,11 @@
   font-family: 'HarmonyOS Sans','Inter','Microsoft YaHei UI','PingFangSC-Regular',Helvetica,Arial,sans-serif;
 }
 
+.item_container > div {
+  display: flex;
+  justify-content: space-between;
+}
+
 .item_container > p {
   color: rgba(60,60,67,0.6);
   font-size: 14px;

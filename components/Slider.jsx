@@ -3,7 +3,7 @@ import Item from './Item';
 import { useState } from 'react';
 import Image from 'next/image';
 
-export default function Slider({ data, title }) {
+export default function Slider({ data, title, bookmarks, setBookmarks }) {
   const [startIndex, setStartIndex] = useState(0);
 
   const handleNext = () => {
@@ -21,10 +21,12 @@ export default function Slider({ data, title }) {
       </div>
       <div className={styles.slider} >
         {data.slice(startIndex, startIndex + 5).map((item, index) => (
-          <Item key={index} data={item} />
+          <Item key={index} data={item} condition={bookmarks.some(obj => obj.title === item.title)} setBookmarks={setBookmarks} />
         ))}
-        <button className={styles.prev} onClick={handlePrev} disabled={startIndex <= 0}><Image width="24" height="24" src="./left.svg" alt='left' /></button>
-        <button className={styles.next} onClick={handleNext} disabled={startIndex >= data.length - 5}><Image width="24" height="24" src="./right.svg" alt='right' /></button>
+        {data.length > 5 && <>
+          <button className={styles.prev} onClick={handlePrev} disabled={startIndex <= 0}><Image width="24" height="24" src="./left.svg" alt='left' /></button>
+          <button className={styles.next} onClick={handleNext} disabled={startIndex >= data.length - 5}><Image width="24" height="24" src="./right.svg" alt='right' /></button>
+        </>}
       </div>
     </div>
   )
